@@ -6,16 +6,13 @@ body{
 h1 {
     text-align: center;
 }
-.container{
-    text-align: center;
-   
-}
+
 .container{
     background-image: linear-gradient(to right,#073f46,#063b4e ,#125f57,#074738);
-   width:500px;
-   justify-content: center;
+   width:auto;
+  
    margin: 5px 400px 50px 400px ;
-   position: relative;
+   
    
     border-radius: 10px;
     padding: 10px;
@@ -38,17 +35,19 @@ h1 {
     justify-content: space-between;
    margin:15px ;
    text-shadow: 0 0 5px black;
- 
+  
 }
 .left{
     text-align: left;
+    background-size: cover;
     margin: 0px 15px;
 }
 .paddng{
-    padding: 10px 130px;
+    padding: 10px ;
     border-radius: 5px;
     border:none;
     text-align: left;
+    width:93%;
 }
 p{
     color: grey;
@@ -57,8 +56,29 @@ p{
 {
     background-color: black;
     color: white;
-    padding: 5px 190px;
+    padding: 5%;
+    display: inline;
+    width: 93% ;
     border-radius: 5px;
     cursor: pointer;
     margin: 0px 15px;
+}
+
+@media only screen and (max-width:700px){
+
+    .left{
+        flex-direction: column;
+        margin: auto;
+        }
+
+    .container{
+            flex-direction: column;
+            margin: auto;
+            }
+    .mid{
+        flex-direction: column;
+        margin:auto;
+
+    }
+
 }
